@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
 *{
     margin: 0;
     padding: 0;
   }
   body{
     min-height: 100vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:"Poppins",sans-serif;
   }
   nav{
     background-color: white;
@@ -19,6 +21,7 @@
   }
   nav li{
     height: 50px;
+    font-size: calc(30px - 10px);
   }
   nav a{
     height: 100%;
