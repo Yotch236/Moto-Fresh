@@ -87,3 +87,149 @@ section{
     max-width: 550px;
     margin-bottom: 4rem;
 }
+
+.down-arrow{
+    position: absolute;
+    bottom: 3.5rem;
+    right: 9%;
+}
+
+.down-arrow i{
+     padding: 14px;
+     color: var(--bg-color);
+     background: var(--text-color);
+     font-size: 25px;
+     border-radius: 3rem;
+     cursor: pointer;
+     transition: all ease .55s;
+}
+
+.down-arrow i:hover{
+    background: var(--main-color);
+    transform: translateY(5px);
+}
+
+body.color{
+    --text-color: #ffff;
+    --bg-color: #08162a;
+    --second-color: #2b3544;
+}
+
+/*Media Queries*/
+@media (max-width: 1600px){
+    header{
+        padding: 13px 3%;
+    }
+
+    section{
+        padding: 0 5%;
+    }
+}
+
+@media (max-width: 1470px){
+    .hero-img{
+        height: 700px;
+        width: 700px;
+    }
+}
+
+@media (max-width: 1400px){
+    :root{
+        --big-font: 4rem;
+        --p-font: 15px;
+    } 
+
+    .box h3{
+        font-size:20px;
+        margin-bottom:2px;
+    }
+
+    .hero-img{
+        width: 600px;
+        height: 600px;
+    }
+}
+
+@media (max-width: 1230px){
+    .hero{
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    .hero-text{
+        order: 2;
+    }
+
+    section{
+        padding: 50px 5%;
+    }
+
+    .hero-img{
+        margin: auto;
+        height: auto;
+        width: auto;
+    }
+
+    .hero-img img{
+        width: 100%;
+        height: auto;
+        max-width: 650px;
+    }
+}
+
+@media (max-width: 1070px){
+    header{
+        padding: 10px 3%;
+        background: var(--second-color);
+    }
+
+    #menu-icon{
+        display: initial;
+    }
+
+    .navlist{
+        position: absolute;
+        top: -700px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #000;
+        transition: all ease .55s;
+        text-align: left
+    }
+    .navlist a{
+        display: block;
+        font-size: 23px;
+        font-weight: 400;
+        margin: 0.8rem 1.8rem;
+        color: var(--second-color);
+    }
+    .navlist.open{
+        top: 100%;
+    }
+}
+
+@media (max-width: 600px){
+    .hero-in{
+        grid-template-columns: repeat(auto-fit, minmax(190px, auto));
+        gap: 18px;
+    }
+    .box{
+        padding: 10px 30px;
+    }
+
+    .h-btn{
+        padding: 6px 14px;
+        margin-right: 8px;
+    }
+    :root{
+        --big-font: 3rem;
+        --p-font: 14px;
+    }
+    .logo{
+        font-size: 32px;
+    }
+    #menu-icon{
+        margin-right: 5px;
+    }
+}
