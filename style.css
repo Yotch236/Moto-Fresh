@@ -107,6 +107,43 @@ nav .nav-bar .logo a{
     opacity: 1;
 }
 
+.nav-bar .darkLight{
+    display: flex;
+    align-items: center;
+}
+
+.darkLight .dark-light{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.dark-light i{
+    position: absolute;
+    color: var(--text-color);
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dark-light i.sun{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dark-light.active i.sun{
+    opacity: 1;
+    pointer-events: none;
+}
+
+.dark-light i.moon{
+    opacity: 0;
+    pointer-events: none;
+}
+
 @media (max-width: 790px){
     nav .nav-bar .sidebarOpen{
         display: block;
