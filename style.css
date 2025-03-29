@@ -155,6 +155,24 @@ nav .nav-bar .logo a {
     pointer-events: none;
 }
 
+/* Content Section */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 40px;
+    color: #333;
+}
+
+body.dark .content h1 {
+    color: #ccc;
+}
+
 @media (max-width: 790px) {
     nav .nav-bar .sidebarOpen {
         display: block;
@@ -202,5 +220,16 @@ nav .nav-bar .logo a {
     .nav-links li a {
         display: block;
         margin-top: 20px;
+    }
+
+    .content{
+        flex-direction: column;
+        padding: 40px 20px;
+        height: auto;
+        margin-top: 300px;
+    }
+
+    .content h1{
+        font-size: 30px;
     }
 }
