@@ -25,6 +25,12 @@ if (sidebarOpen) {
 }
 
 // Close sidebar when clicking outside of it
+if (sidebarClose) {
+    sidebarClose.addEventListener("click", () => {
+        nav.classList.remove("active");
+    });
+}
+
 body.addEventListener("click", (e) => {
     let clickedElm = e.target;
 

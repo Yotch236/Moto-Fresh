@@ -1,8 +1,14 @@
-@import url('https://fonts/googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-*{margin: 0; padding:0; box-sizing: border-box; font-family: 'Poppins', sans-serif; transition: all 0.4s ease;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.4s ease;
+}
 
-:root{
+:root {
     --body-color: #E4E9E7;
     --nav-color: #4070F4;
     --side-nav: #010718;
@@ -11,20 +17,20 @@
     --search-text: #010718;
 }
 
-body{
+body {
     height: 100vh;
     background-color: var(--body-color);
 }
 
-body.dark{
-    --body--color: #18191A;
+body.dark {
+    --body-color: #18191A;
     --nav-color: #242526;
     --side-nav: #242526;
     --text-color: #ccc;
     --search-bar: #242526;
 }
 
-nav{
+nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -34,11 +40,11 @@ nav{
     z-index: 100;
 }
 
-body.dark nav{
+body.dark nav {
     border: 1px solid #393838;
 }
 
-nav .nav-bar{
+nav .nav-bar {
     position: relative;
     height: 100%;
     max-width: 1000px;
@@ -51,7 +57,7 @@ nav .nav-bar{
     justify-content: space-between;
 }
 
-nav .nav-bar .sidebarOpen{
+nav .nav-bar .sidebarOpen {
     color: var(--text-color);
     font-size: 25px;
     padding: 5px;
@@ -59,29 +65,29 @@ nav .nav-bar .sidebarOpen{
     display: none;
 }
 
-nav .nav-bar .logo a{
+nav .nav-bar .logo a {
     font-size: 25px;
     font-weight: 500;
     color: var(--text-color);
     text-decoration: none;
 }
 
-.menu .logo-toggle{
+.menu .logo-toggle {
     display: none;
 }
 
-.nav-bar .nav-links{
+.nav-bar .nav-links {
     display: flex;
-    align-items: center;;
+    align-items: center;
 }
 
-.nav-bar .nav-links li{
+.nav-bar .nav-links li {
     margin: 0 5px;
     list-style: none;
 }
 
-.nav-links li a{
-    position: relative; 
+.nav-links li a {
+    position: relative;
     font-size: 17px;
     font-weight: 400;
     color: var(--text-color);
@@ -89,7 +95,7 @@ nav .nav-bar .logo a{
     padding: 10px;
 }
 
-.nav-links li a::before{
+.nav-links li a::before {
     content: '';
     position: absolute;
     left: 50%;
@@ -103,16 +109,16 @@ nav .nav-bar .logo a{
     transition: all 0.3s ease;
 }
 
-.nav-links li:hover a::before{
+.nav-links li:hover a::before {
     opacity: 1;
 }
 
-.nav-bar .darkLight{
+.nav-bar .darkLight {
     display: flex;
     align-items: center;
 }
 
-.darkLight .dark-light{
+.darkLight .dark-light {
     height: 40px;
     width: 40px;
     display: flex;
@@ -121,7 +127,7 @@ nav .nav-bar .logo a{
     margin: 0 5px;
 }
 
-.dark-light i{
+.dark-light i {
     position: absolute;
     color: var(--text-color);
     font-size: 22px;
@@ -129,27 +135,32 @@ nav .nav-bar .logo a{
     transition: all 0.3s ease;
 }
 
-.dark-light i.sun{
+.dark-light i.sun {
     opacity: 1;
     pointer-events: auto;
 }
 
-.dark-light.active i.sun{
-    opacity: 1;
-    pointer-events: none;
-}
-
-.dark-light i.moon{
+.dark-light.active i.sun {
     opacity: 0;
     pointer-events: none;
 }
 
-@media (max-width: 790px){
-    nav .nav-bar .sidebarOpen{
+.dark-light i.moon {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dark-light.active i.moon {
+    opacity: 0;
+    pointer-events: none;
+}
+
+@media (max-width: 790px) {
+    nav .nav-bar .sidebarOpen {
         display: block;
     }
 
-    .menu{
+    .menu {
         position: fixed;
         height: 100%;
         width: 320px;
@@ -161,35 +172,34 @@ nav .nav-bar .logo a{
         transition: all 0.4s ease;
     }
 
-    nav.active .menu{
-        left:-0%;
+    nav.active .menu {
+        left: -0%;
     }
 
-    nav.active .nav-bar .navLogo a{
+    nav.active .nav-bar .navLogo a {
         opacity: 0;
         transition: all 0.3s ease;
     }
 
-    .menu .logo-toggle{
-        display: block;
-        width: 100%;
+    .menu .logo-toggle {
         display: flex;
+        width: 100%;
         align-items: center;
         justify-content: space-between;
     }
 
-    .logo-toggle .sidebarClose{
+    .logo-toggle .sidebarClose {
         color: var(--text-color);
         font-size: 24px;
         cursor: pointer;
     }
 
-    .nav-bar .nav-links{
+    .nav-bar .nav-links {
         flex-direction: column;
         padding-top: 30px;
     }
 
-    .nav-links li a{
+    .nav-links li a {
         display: block;
         margin-top: 20px;
     }
