@@ -4,31 +4,31 @@ const body = document.querySelector("body"),
       sidebarOpen = document.querySelector(".sidebarOpen"),
       sidebarClose = document.querySelector(".sidebarClose");
 
-      let getMode = localStoraage.getItem("mode");
-         if (getMode && getMode === "dark-mode"){
-            body.classList.add("dark");
-         }
+let getMode = localStorage.getItem("mode");
+if (getMode === "dark-mode") {
+    body.classList.add("dark");
+}
 
-        modeToggle.addEventListener("click", () =>{
-            modeToggle.classList.toggle("active");
-            body.classList.toggle("dark");
-            
-            if(!body.classList.contains("dark")){
-                localStorage.setItem("mode", "light-mode");
-            }else{
-                localStorage.setItem("mode", "dark-mode");
-            }
-        });
+if (modeToggle) {
+    modeToggle.addEventListener("click", () => {
+        modeToggle.classList.toggle("active");
+        body.classList.toggle("dark");
 
-sidebarOpen.addEventListener('click', () => {
-    nav.classList.add('active');
-});
+        localStorage.setItem("mode", body.classList.contains("dark") ? "dark-mode" : "light-mode");
+    });
+}
+
+if (sidebarOpen) {
+    sidebarOpen.addEventListener("click", () => {
+        nav.classList.add("active");
+    });
+}
 
 // Close sidebar when clicking outside of it
-body.addEventListener('click', e => {
+body.addEventListener("click", (e) => {
     let clickedElm = e.target;
 
-    if (!clickedElm.classList.contains('sidebarOpen') && !clickedElm.classList.contains("menu")) {
-        nav.classList.remove('active');
+    if (!clickedElm.closest("nav") && !clickedElm.classList.contains("sidebarOpen")) {
+        nav.classList.remove("active");
     }
 });
