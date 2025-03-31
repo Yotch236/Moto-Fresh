@@ -8,7 +8,7 @@
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: #D98084; /* Set a background color */
+    background-color: #FFBF00; /* Set a background color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 5px; /* Rounded corners */
@@ -192,23 +192,39 @@ body.dark .content h1 {
     color: #ccc;
 }
 
-#about{
+#about {
     display: flex;
     justify-content: center;
-    height: 100vh;
     align-items: center;
-    background: var(--body-color);
+    min-height: 85vh;
+    background: var(--nav-color);
+    text-align: center;
+    padding: 40px 20px;
 }
 
-.about-content h1{
-    font-size: 40px;
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+}
 
+.about-content h1 {
+    font-size: 50px;
+    color: var(--text-color);
+    margin-bottom: 50px;
+}
+
+.about-content p {
+    font-size: 19px;
+    color: var(--text-color);
+    line-height: 1.9;
+    text-align: justify;
 }
 
 #service{
     align-items: center;
     display: flex;
-    height: 100vh;
+    height: 75vh;
     justify-content: center;
     background: var(--body-color);
 }
