@@ -205,7 +205,7 @@ body.dark .content h1 {
 .container {
     max-width: 800px;
     width: 100%;
-    padding: 20px;
+    padding: 20px; 
 }
 
 .about-content h1 {
