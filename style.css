@@ -221,20 +221,41 @@ body.dark .content h1 {
     align-items: center;
     display:flex;
     align-items: center;
+    background: var(--nav-color);
     justify-content: center;
-    height: 100vh;
+    height: 25vh;
 }
 
 .contact-content h1{
-    font-size: 40px;
+    font-size: 30px;
+    color: var(--text-color);
+    margin: 0 0 15px;
+    text-align: center;
 }
+.contact-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-details a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.contact-details i{
+    color: var(--text-color);
+    font-size: 15px;
+}
+
 
 footer{
     display:flex;
     justify-content: center;
     align-items: center;
     color: var(--text-color);
-    background: var(--nav-color);
+    background:var(--nav-color);
     height: 5vh;
 }
 /*MEDIA*/
