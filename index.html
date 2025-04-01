@@ -18,7 +18,12 @@
 
 <title>Moto Fresh Vending Machine</title>
 </head>
-<body>
+<body onload="hideLoading">
+
+	<div id="loading">
+		<div class="loader"></div>
+	</div>
+
 	<nav>
 		<div class="nav-bar">
 			<i class="bx bx-menu sidebarOpen"></i>
@@ -62,20 +67,37 @@
 			</div>
 		</div>
 	</section>
-	
 
 	<section id="service">
 		<div class="service-content">
-			<h1>Service Section</h1>
+			<h1>How It Works</h1>
+			<div class="service-cards">
+				<div class="card">
+					<div class="card-number">1</div>
+					<img src="/picture/Payment.png" alt="Sign up">
+					<h2>Insert Payment</h2>
+				</div>
+				<div class="card">
+					<div class="card-number">2</div>
+					<img src="/picture/helmet.png" alt="Create profile">
+					<h2>Place Helmet Inside</h2>
+				</div>
+				<div class="card">
+					<div class="card-number">3</div>
+					<img src="/picture/collect.png" alt="Connect">
+					<h2>Retrieve Helmet</h2>
+				</div>
+			</div>
 		</div>
 	</section>
+	
 
 	<section id="contact">
 		<div class="contact-content">
 			<h1>Contact Us</h1>
 			<div class="contact-details">
 				<i class="fa-brands fa-instagram"><a href="https://www.instagram.com/im_joannaq/?hl=en"> im_joannaq |</a></i>
-				<i class="fa-solid fa-address-book"> 0961-162-1234</i> 
+				<i class="fa-solid fa-address-book"> 0967-943-6472</i> 
 			</div>
 			
 		</div>
