@@ -184,6 +184,7 @@ nav .nav-bar .logo a {
 }
 
 .content h1 {
+    margin-bottom:300px;
     font-size: 40px;
     color: #333;
 }
