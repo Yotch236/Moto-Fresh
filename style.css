@@ -211,6 +211,12 @@ nav .nav-bar .logo a {
     transition: 0.3s;
 }
 
+.btn:hover{
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
 body.dark .content h1 {
     color: #ccc;
 }
