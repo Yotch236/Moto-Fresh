@@ -214,7 +214,7 @@ nav .nav-bar .logo a {
 .btn:hover{
     outline: none;
     border-color: #9ecaed;
-    box-shadow: 0 0 10px #9ecaed;
+    box-shadow: 0 0 10px #000;
 }
 
 body.dark .content h1 {
