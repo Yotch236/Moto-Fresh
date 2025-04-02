@@ -184,8 +184,18 @@ nav .nav-bar .logo a {
 }
 
 .content h1 {
-    font-size: 40px;
-    color: #333;
+   overflow: hidden;
+   border-right: .15em solid #6C63FF;
+   white-space: nowrap;
+   margin: 0 auto;
+   letter-spacing: .90em;
+   animation: typing 3.5s steps(40,end),
+   blink-caret .75s step-end infinite;
+}
+
+@keyframes typing{
+    from { width: 0}
+    to {width: 100%}
 }
 
 body.dark .content h1 {
@@ -236,6 +246,7 @@ body.dark .content h1 {
 .service-content h1 {
     font-size: 40px;
     margin-bottom: 20px;
+    color: #6C63FF;
 }
 .service-cards {
     display: flex;
