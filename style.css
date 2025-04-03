@@ -190,7 +190,7 @@ nav .nav-bar .logo a {
 }
 
 .content h1{
-    font-size: 2.5rem;
+    font-size: 4.5rem;
     margin-top: 5px;
 }
 
@@ -238,7 +238,7 @@ body.dark .content p{
 .container {
     max-width: 800px;
     width: 100%;
-    padding: 20px; 
+    padding: 20px;
 }
 
 .about-content h1 {
@@ -349,7 +349,7 @@ footer{
     height: 5vh;
 }
 /*MEDIA*/
-@media (max-width: 790px) {
+@media (max-width: 768px) {
     nav .nav-bar .sidebarOpen {
         display: block;
     }
