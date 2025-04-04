@@ -38,3 +38,11 @@ body.addEventListener("click", (e) => {
         nav.classList.remove("active");
     }
 });
+
+document.querySelectorAll('nav a').forEach(link =>{
+    link.addEventListener('click', () => {
+        setTimeout(() => {
+            nav.classList.remove("active");
+        }, 100);
+    });
+});
