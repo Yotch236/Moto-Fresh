@@ -183,6 +183,7 @@ nav .nav-bar .logo a {
     height: 100vh;
     text-align: center;
     padding: 20px;
+    opacity: 1;
 }
 
 .content {
