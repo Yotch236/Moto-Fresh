@@ -1,4 +1,4 @@
-PROJECT FOR A FRIEND
+COMMISSION PROJECT
 
 -Allows user to  see the website in light or dark mode.
 
