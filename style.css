@@ -182,6 +182,7 @@ nav .nav-bar .logo a {
     justify-content: center;
     height: 100vh;
     text-align: center;
+    background:#f9f4e8;
     padding: 20px;
     opacity: 1;
 }
@@ -219,11 +220,11 @@ nav .nav-bar .logo a {
 }
 
 body.dark .content h1 {
-    color: #ccc;
+    color: #000;
 }
 
 body.dark .content p{
-    color: #ccc;
+    color: #000;
 }
 
 #about {
@@ -352,7 +353,7 @@ footer{
 }
 
 .vision-mission{
-    background-color: #FCD299;
+    background-color: var(--side-nav);
     padding: 60px 20px;
     display: flex;
     justify-content: center;
@@ -369,7 +370,7 @@ footer{
 
   .vision-card,
     .mission-card {
-      background-color: #ffffff;
+      background-color: #FFFDD0 ;
       padding: 40px 30px;
       border-radius: 16px;
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
@@ -487,3 +488,55 @@ footer{
       gap: 20px;
     }
   }
+
+  #contact {
+	padding: 40px 20px;
+	background-color: #3c78e0;
+	color: #fff;
+	text-align: center;
+	font-family: sans-serif;
+}
+
+.contact-content h1 {
+	font-size: 1.5rem;
+	margin-bottom: 20px;
+}
+
+.contact-details {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.contact-item {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 0.95rem;
+	word-break: break-word;
+	text-align: left;
+}
+
+/* Fix link appearance */
+.contact-item a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.contact-item a:hover {
+	text-decoration: underline;
+}
+
+/* Media query for tiny screens */
+@media (max-width: 768px) {
+	.contact-content h1 {
+		font-size: 1.3rem;
+	}
+	
+	.contact-item {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+}
