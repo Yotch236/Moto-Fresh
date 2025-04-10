@@ -237,6 +237,21 @@ body.dark .content p{
     padding: 40px 20px;
 }
 
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease-out;
+  }
+
+  .scroll-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .delay-1 {
+    transition-delay: 0.3s;
+  }
+
 .container {
     max-width: 800px;
     width: 100%;
