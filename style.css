@@ -290,9 +290,6 @@ body.dark .content p{
     color: #6C63FF;
 }
 
-.service-content p{
-    color: blue;
-}
 .service-cards {
     display: flex;
     justify-content: center;
