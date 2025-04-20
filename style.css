@@ -476,7 +476,8 @@ footer{
       }
   
       .accordion-content p {
-        margin: 1em 0;
+        margin: 1em 1;
+        text-align: justify;
         color: black;
       }
   
