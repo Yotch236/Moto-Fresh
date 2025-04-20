@@ -312,6 +312,16 @@ body.dark .content p{
     color:#7a5cff;
     margin-bottom: 10px;
 }
+
+.custom-link {
+    color: green;             /* or use a hex like #0000FF if you want */
+    text-decoration: none;   /* removes underline */
+  }
+  
+  .custom-link:hover {
+    text-decoration: underline; /* adds underline on hover if desired */
+  }
+  
 /*.card-number {
     background: #6C63FF;
     color: white;
