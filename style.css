@@ -409,38 +409,72 @@ footer{
       font-weight: 600;
     }
 
-    .signifance_promotion {
+    .accordion {
+        max-width: 600px;
+        margin: 2em auto;
+        border-radius: 8px;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+      }
+  
+      .accordion-item {
+        border-bottom: 1px solid #ddd;
+      }
+  
+      .accordion-header {
+        width: 100%;
+        padding: 1em;
+        background: royalblue;
+        color: white;
+        text-align: left;
+        font-size: 1.1em;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: background 0.3s ease;
         display: flex;
-        flex-wrap: wrap;
-        gap: 1.5rem;
-        justify-content: center;
-        padding: 2rem;
-        background-color: #f0f0f0;
+        justify-content: space-between;
+        align-items: center;
       }
-      
-      .signifance_promotion .card {
-        background: white;
-        padding: 1.5rem;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        flex: 1 1 300px; /* Flexible and responsive */
-        max-width: 400px;
+  
+      .accordion-header:hover {
+        background: #325bcc;
+      }
+  
+      .accordion-header::after {
+        content: '\25BC'; /* Down arrow */
         transition: transform 0.3s ease;
+        font-size: 0.9em;
       }
-      
-      .signifance_promotion .card:hover {
-        transform: translateY(-5px);
+  
+      .accordion-header.active::after {
+        transform: rotate(-180deg); /* Up arrow */
       }
-      
-      .card h2 {
-        margin-bottom: 0.75rem;
-        font-size: 1.5rem;
+  
+      .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        background: white;
+        transition: max-height 0.3s ease;
+        padding: 0 1em;
       }
-      
-      .card p {
-        color: #555;
+  
+      .accordion-content p {
+        margin: 1em 0;
+        color: black;
       }
-      
+  
+      @media (max-width: 600px) {
+        .accordion-header {
+          font-size: 1em;
+          padding: 0.8em;
+        }
+  
+        .accordion-content {
+          font-size: 0.95em;
+        }
+      }
+
       
 
 /*MEDIA*/
