@@ -307,7 +307,12 @@ body.dark .content p{
     max-width: 150px;
     margin-bottom: 15px;
 }
-.card-number {
+.card p {
+    font-size: 15px;
+    color:#7a5cff;
+    margin-bottom: 10px;
+}
+/*.card-number {
     background: #6C63FF;
     color: white;
     font-size: 14px;
@@ -319,10 +324,11 @@ body.dark .content p{
     justify-content: center;
     margin: auto;
     margin-bottom: 10px;
-}
+}*/
+
 .card h2 {
     font-size: 18px;
-    color: #6C63FF;
+    color: #7a5cff;
 }
 
 
