@@ -11,48 +11,56 @@ html{
 }
 
 /* Smaller Devices */   
+  /* Initially hide the bottom navigation */
+  .bnav {
+    display: none;
+}
 
-@media (max-width: 426px) {
-
-    .MTopNav{
-        display: flex;
-        background-color: #C30F45;
-        padding: 10px 20px;
-        color: #fff;
-        justify-content: center;
-        align-items: center;
-    }
-
+/* Show the bottom navigation on screens with a maximum width of 768px */
+@media (max-width: 768px) {
     .bnav {
         position: fixed;
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 60px;
-        background-color: #C30F45;
-        border-top: 1px solid #ccc;
+        background-color: #f8f8f8; /* Adjust as needed */
         display: flex;
         justify-content: space-around;
         align-items: center;
-        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
-        z-index: 100;
+        padding: 10px 0;
+        z-index: 1000; /* Ensure it stays on top */
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
     }
 
     .bnav a {
-        text-decoration: none;
-        color: #ccc;
-        font-size: 12px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        color: #555; /* Adjust as needed */
+        text-decoration: none;
     }
 
-    .bnav a:hover {
-        color: #000;
+    .bnav a i {
+        font-size: 24px; /* Adjust icon size */
+        margin-bottom: 5px;
     }
 
-    .bnav i {
-        font-size: 20px;
-        margin-bottom: 2px;
+    .bnav a span {
+        font-size: 12px; /* Adjust text size */
     }
+}
+
+/* You might want to adjust the top navigation for smaller screens as well */
+.MTopNav {
+    /* Styles for the top navigation */
+    background-color: #333; /* Example background color */
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.MTopNav .logo h2 {
+    margin: 0;
+    display: flex;
 }
