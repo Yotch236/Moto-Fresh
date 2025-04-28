@@ -19,6 +19,8 @@ html{
         background-color: #C30F45;
         padding: 10px 20px;
         color: #fff;
+        justify-content: center;
+        align-items: center;
     }
 
     .bnav {
