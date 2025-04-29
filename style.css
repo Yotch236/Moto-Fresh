@@ -17,7 +17,7 @@ html{
 }
 
 /* Show the bottom navigation on screens with a maximum width of 768px */
-@media (max-width: 768px) {
+@media (max-width: 719px) {
     .bnav {
         position: fixed;
         bottom: 0;
@@ -63,4 +63,19 @@ html{
 .MTopNav .logo h2 {
     margin: 0;
     display: flex;
+}
+
+@media (min-width: 720px) and (max-width: 2598px) {
+    .MTopNav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .MTopNav .logo h2 {
+        margin: 0;
+        font-size: 24px; /* Adjust as needed */
+    }
+
 }
