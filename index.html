@@ -5,39 +5,66 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 	<title>Moto Fresh Vending Machine</title>
 </head>
 <body>
-
+	
 	<!-- Top Nav for smaller device -->
-	<nav class="MTopNav">
-		<div class="logo">
-			<h2>MFVM</h2>
+	<nav class="navbar navbar-expand-lg bg-danger">
+		<div class="container-fluid">
+		  <a class="navbar-brand text-white" href="#landing">MFVM</a>
+		  <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav ms-auto">
+			  <a class="nav-link active text-white" aria-current="page" href="#landing">Home</a>
+			  <a class="nav-link text-white" href="#about">About</a>
+			  <a class="nav-link text-white" href="#service">Service</a>
+			  <a class="nav-link text-white" href="#contact">Contact</a>
+			</div>
+		  </div>
 		</div>
-
-	</nav>
+	  </nav>
 	<!-- Bottom Navigation -->
-	 <div class="bnav">
+	<div class="bnav">
 		<a href="index.html">
 			<i class="bx bx-home"></i>
 			<span>Home</span>
 		</a>
-
+		
 		<a href="#about">
 			<i class='bx bx-info-circle'></i>
 			<span>About</span>
 		</a>
-
+		
 		<a href="#service">
 			<i class="bx bx-cog"></i>
 			<span>Service</span>
 		</a>
-
+		
 		<a href="#contact">
 			<i class="bx bx-phone"></i>
 			<span>Contact</span>
 		</a>
-	 </div>
+	</div>
+
+	<!-- End of Bottom Navigation -->
+
+
+	<!-- Landing Section -->
+	 <section id="landing" class="container-fluid">
+		<div class="row vh-100 d-flex justify-content-center align-items-center text-center">
+			<div class="col-lg-6 col-md-8 col-sm-10">
+				<h1 class="display-4 fw-bold text-white">Moto Fresh Vending Machine</h1>
+				<p class="lead text-white fw-normal">Your One-Stop Helmet Cleaning Machine</p>
+				<a href="#about" class="btn btn-danger btn-lg">Learn More</a>
+			</div>
+	 </section>
+	 <!-- End of Landing Section -->
+	<!-- BOOTSTRAP JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 </html>
 
