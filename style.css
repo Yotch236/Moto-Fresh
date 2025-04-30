@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+/* For animation */
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
 
 * {
     margin: 0;
@@ -17,9 +28,47 @@ html{
 }
 
 #landing{
-    background: url(/picture/landinghelmet.png);
+    background:
+       linear-gradient(
+        rgba(0,34,65,0.61),
+        rgba(0,34,65,0.61)
+       ),
+    url(/picture/landinghelmet.png);
     background-repeat: no-repeat;
-    background-size: cover};
+    background-size: cover;
+}
+
+#land-title{
+    font-weight: bold;
+    animation : fadeInUp 1s ease-out forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+    color: pink;
+}
+#sub-title-landing{
+    font-size: 32px;
+    color: #DC3545;
+    font-weight: bold;
+}
+
+#text-title{
+	font-family: Montserrat;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 32px;
+	color: #DC3545;
+    animation : fadeInUp 1s ease-out forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+#about p{
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	color: #DC3545;
+}
 
 /* Show the bottom navigation on screens with a maximum width of 768px */
 @media (max-width: 719px) {
@@ -53,5 +102,13 @@ html{
 
     .bnav a span {
         font-size: 12px; /* Adjust text size */
+    }
+
+    #sub-title-landing{
+        font-size: 20px;
+    }
+
+    #land-title{
+        font-size: 30px;
     }
 }
