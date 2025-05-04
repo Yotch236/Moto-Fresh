@@ -1,167 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- CSS -->
-<link rel="stylesheet" href="style.css">
-
-<!-- Boxicons CSS -->
-<link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-
-<link rel="icon" type="x-icon" href="/picture/helmet.ico">
-
-<title>Moto Fresh Vending Machine</title>
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<title>Moto Fresh Vending Machine</title>
 </head>
-<body> 
-	<nav>
-		<div class="nav-bar">
-			<i class="bx bx-menu sidebarOpen"></i>
-			<span class="logo navLogo"><a href="#home">MFVM</a></span>
-
-			<div class="menu">
-				<div class="logo-toggle">
-					<span class="logo"><a href="#home">MFVM</a></span>
-					<i class="bx bx-x sidebarClose"></i>
-				</div>
-
-				<ul class="nav-links">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#service">Service</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</div>
-
-			<div class="darkLight">
-				<div class="dark-light">
-					<i class="bx bx-moon"></i>
-				</div>
-			</div>
-		</div>
-	</nav>
-
-	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
-	<!--Home Section-->
-	<section id="home">
-		<div class="content">
-			<h1 class="scroll-animate">Moto Fresh Vending Machine </h1>
-			<p class="scroll-animate delay-1"> A self-service machine that efficiently cleans, sanitizes, and dries helmets. Ideal for motorists on long rides.</p>
-			<a href="#about" class="btn">Know More</a>
-		</div>
-	</section>
-
-	<section id="about">
-		<div class="container">
-			<div class="about-content">
-				<h1 class="scroll-animate">About Us</h1>
-				<p class="scroll-animate delay-1">Fresh Moto Vending Machine is a self-service device designed to clean, sanitize, and dry helmets efficiently. It utilizes advanced technologies like UV-C sanitization to eliminate 99.9% of germs, bacteria, and viruses. Fully automated and requiring no manpower, these machines are often coin-operated or support mobile payments. They offer a quick and convenient solution for riders to maintain helmet hygiene, ensuring safety and comfort on every ride.</p>
-			</div>
-		</div>
-	</section>
-
-	<section class="accordion">
-		<div class="accordion-item">
-			<button class="accordion-header">Details</button>
-			<div class="accordion-content">
-			  <p>Helmet cleaning vending machines are a smart solution to keep helmets clean and safe, especially for students who use them daily. These machines are easy to use and work quickly to remove dirt, sweat, and bad odors from helmets. They are small enough to be placed in schools, making them convenient for students. With just a few steps, students can clean their helmets and feel more comfortable wearing them. This helps promote hygiene and keeps helmets fresh for everyday use. Some machines also use eco-friendly cleaning solutions, which is better for the environment. Having helmet cleaning vending machines in schools can make sure students stay safe and healthy while using their helmets.</p>
-			</div>
-		  </div>
-		  <div class="accordion-item">
-			<button class="accordion-header">Promotion</button>
-			<div class="accordion-content">
-			  <p>Moto Fresh Vending Machines are an excellent solution for keeping helmets clean and safe, especially for students. These machines work quickly and make it easy for students to sanitize their helmets, promoting better hygiene. By placing the vending machine beside in the school café, it becomes more accessible, allowing students to clean their helmets conveniently while grabbing snacks or meals. This central location ensures high visibility and encourages regular use. We can promote the machines through simple posts or videos on school pages, showing how they work and highlighting their benefits. Offering rewards for frequent users can motivate students to use the machines often. If the machines are eco-friendly, it is important to emphasize this feature to show their benefits for both students and the environment. With these steps, Moto Fresh Vending Machines can be a valuable addition to schools, supporting cleanliness and student safety.</p>
-			</div>
-		  </div>
-		  <div class="accordion-item">
-			<button class="accordion-header">Significance</button>
-			<div class="accordion-content">
-			  <p>Helmet cleaning vending machines are important for schools because they help keep students' helmets clean, fresh, and safe to use. Dirty helmets can be uncomfortable and may carry bacteria or unpleasant smells, which is harmful to health. With these machines, students can quickly sanitize their helmets, ensuring hygiene and comfort every day. They are convenient and save time, making it easy for busy students to keep their helmets clean. Promoting cleanliness and safety, these machines can create a healthier and more comfortable environment for students who use helmets regularly. Having them in schools highlights the importance of hygiene and offers a practical solution for students' daily needs.</p>
-			</div>
-		  </div>			
-	</section>
-
-	<hr>
-
-	<section id="service">
-		<div class="service-content">
-			<h1 class="scroll-animate">How It Works</h1>
-			<div class="service-cards">
-				<div class="card">
-					
-					<img src="/picture/Pay.png" alt="Insert Payment">
-					<h2 class="scroll-animate delay-1">Insert Payment</h2>
-					<p class="scroll-animate delay-1" style="text-align: justify;">
-						The user inserts the exact amount of money 
-						(<a href="coins.html" target="_blank" class="custom-link">coins</a> or 
-						<a href="bill.html" target="_blank" class="custom-link">bill</a>) 
-						into the payment slot. This activates the vending machine’s sanitation process and unlocks the compartment for helmet insertion.
-					  </p>
-					  
-				</div>
-				<div class="card">
-					
-					<img src="/picture/PutHelmet.png" alt="Place Helmet Inside">
-					<h2 class="scroll-animate delay-1">Place Helmet Inside</h2>
-					<p class="scroll-animate delay-1" style="text-align: justify;">Once payment is confirmed, the user opens the designated compartment and places the helmet inside.</p>
-				</div>
-				<div class="card">
-					
-					<img src="/picture/RetrieveHelmet.png" alt="Retrieve Helmet">
-					<h2 class="scroll-animate delay-1">Sanitation process begins</h2>
-					<p class="scroll-animate delay-1" style="text-align: justify;">The sanitation process begins automatically.</p>
-				</div>
-
-				<div class="card">
-					<img src="/picture/image.png" alt="">
-					<h2 class="scroll-animate delay-1">Get Fresh Helmet</h2>
-					<p class="scroll-animate delay-1" style="text-align: justify;">The user can now get the freshly sanitized, deodorized, and dry helmet from the same compartment.
-						The helmet is now ready for safe and hygienic use.
-						</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<hr>
-	<section class="accordion">
-		<div class="accordion-item">
-			<button class="accordion-header">Mission</button>
-			<div class="accordion-content">
-			  <p>Moto Fresh Vending Machine Service is committed to providing fast, efficient, high-quality sanitation of motorcycle helmets via modern, self-service technologies. Our mission includes ensuring rider safety and personal hygiene through accessible, affordable, and environmentally sound means of cleaning helmets. We intend to fulfill the needs of motorcycle riders, especially students and commuters, by saving time while ensuring the cleanliness, freshness, and safety of their helmets. We intend to ensure a cleaner, healthier, sustainable, and more customer-friendly experience for riders through innovation, customer-focused service, and sustainable practices.</p>
-			</div>
-		  </div>
-		  <div class="accordion-item">
-			<button class="accordion-header">Vision</button>
-			<div class="accordion-content">
-			  <p>We envision being the best in automated helmet cleaning service, a name synonymous with reliability, innovation, and environmental consciousness. We see the growing of Moto Fresh Vending Machine Service into schools, transport terminals, business hubs, and urban communities throughout the nation-wide. We would like to continuously improve the technology and services while setting a national benchmark for helmet hygiene and promoting responsible waste management and sustainable living. We hope to see a future where cleanliness, convenience, and community well-being coexist.</p>
-			</div>
-		  </div>
-			
-	</section>
+<body>
 	
+	<!-- Top Nav for smaller device -->
+	<nav class="navbar navbar-expand-lg bg-danger">
+		<div class="container-fluid">
+		  <a class="navbar-brand text-white" href="#landing">MFVM</a>
+		  <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav ms-auto ">
+			  <a class="nav-link active text-white" aria-current="page" href="#landing">Home</a>
+			  <a class="nav-link text-white" href="#about">About</a>
+			  <a class="nav-link text-white" href="#service">Service</a>
+			  <a class="nav-link text-white" href="#contact">Contact</a>
+			</div>
+		  </div>
+		</div>
+	  </nav>
+	<!-- Bottom Navigation -->
+	<div class="bnav">
+		<a href="#landing">
+			<i class="bx bx-home"></i>
+			<span>Home</span>
+		</a>
+		
+		<a href="#about">
+			<i class='bx bx-info-circle'></i>
+			<span>About</span>
+		</a>
+		
+		<a href="#service">
+			<i class="bx bx-cog"></i>
+			<span>Service</span>
+		</a>
+		
+		<a href="#contact">
+			<i class="bx bx-phone"></i>
+			<span>Contact</span>
+		</a>
+	</div>
 
-	<section id="contact">
-		<div class="contact-content">
-			<h1>Contact Us</h1>
-			<div class="contact-details">
-				<i class="fa-solid fa-location-dot"><a href="https://www.google.com/maps/place/Cavite+State+University+-+CCAT+Campus/@14.4035503,120.8634044,1002m/data=!3m2!1e3!4b1!4m6!3m5!1s0x33962cec6eaa540d:0x494a6f0a105a7ef1!8m2!3d14.4035451!4d120.8659793!16s%2Fm%2F011f1mbg?entry=ttu&g_ep=EgoyMDI1MDQwOS4wIKXMDSoASAFQAw%3D%3D"> Cavite State University- CCAT Campus Rosario, Cavite</a></i>
-				<i class="fa-brands fa-instagram"><a href="https://www.instagram.com/motofreshvendomachine?igsh=aWZsZDNlYmdhMXFo&utm_source=qr"> MotoFreshVendoMachine |</a></i>
-				<i class="fa-brands fa-facebook"><a href="https://www.facebook.com/profile.php?id=61575145138316&mibextid=wwXIfr&rdid=DnG1p0zQhvIwhHqU&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1B63rtQLac%2F%3Fmibextid%3DwwXIfr#"> Moto Fresh Vending Machine |</a></i>
-				<i class="fa-solid fa-address-book"> 0967-943-6472</i> 
+	<!-- End of Bottom Navigation -->
+
+
+	<!-- Landing Section -->
+	 <section id="landing" class="container-fluid">
+		<div class="row vh-100 d-flex justify-content-center align-items-center text-center">
+			<div class="col-lg-6 col-md-8 col-sm-10 fade-in">
+				<h1 class="display-4" id="land-title" >Moto Fresh Vending Machine</h1>
+				<p class="lead  text-white fw-bold fs-2">Your One-Stop Helmet Cleaning Machine</p>
+				<a href="#about" class="btn btn-success btn-lg">Learn More</a>
+			</div>
+	 </section>
+	 <!-- End of Landing Section -->
+	  
+	 <!-- About Section -->
+	 <section id="about" class="container-fluid p-md-5">
+		<div class="row justify-content-md-center py-md-5 my-md-5">
+		  <div class="col-md-3 my-5 my-md-0">
+			<img src="/picture/veemdo.png" class="img-fluid" alt="Moto Fresh Logo">
+		  </div>
+	  
+		  <div class="col-md-7 ms-1 px-2">
+			<h4 id="text-title" class="fs-3">About Moto Fresh</h4>
+			<p class="fs-4 text-dark">
+			  Moto Fresh Vending Machine is a self-service device designed to clean, sanitize, and dry helmets efficiently. It utilizes advanced technologies like UV-C sanitization to eliminate 99.9% of germs, bacteria, and viruses. 
+			</p>
+
+			<h4 id="text-title" class="fs-3 my-1">Why Moto Fresh?</h4>
+			<p class="fs-4 py-1 text-dark">
+				Moto Fresh Vending Machine are an excellent solution for keeping helmets clean and safe, especially for students. These machines work quickly and make it easy for students to sanitize their helmets, promoting better hygiene.
+			</p>
+
+			<h4 id="text-title" class="fs-3 my-1">Significance of Moto Fresh</h4>
+			<p class="fs-4 py-1 text-dark">
+				Helmet cleaning vending machines are important for schools because they help keep students' helmets clean, fresh, and safe to use. Dirty helmets can be uncomfortable and may carry bacteria or unpleasant smells, which is harmful to health.
+			</p>
+		  </div>
+		</div>
+	  </section>
+	  <!-- End of About Section -->
+
+	  <!-- Service Section -->
+	  <section id="service" class="container-fluid bg-danger py-5">
+		<div class="text-center text-white mb-5">
+		  <h1 class="display-5" id="land-title">How It Works</h1>
+		</div>
+	  
+		<div class="container">
+		  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+			<div class="col">
+			  <div class="card h-100">
+				<img src="/picture/Pay.png" class="card-img-top service-img" alt="Pay">
+				<div class="card-body">
+				  <h5 class="card-title text-center text-danger">Insert Payment</h5>
+				  <p class="card-text">The user inserts the exact amount of money (<a href="/coins.html" class="text-decoration-none"><span class="text-primary">coins</span></a> or <a href="/bill.html" class="text-decoration-none"><span class="text-primary">bill</span></a>) into the payment slot. This activates the vending machine’s sanitation process and unlocks the compartment for helmet insertion.</p>
+				</div>
+			  </div>
+			</div>
+	  
+			<div class="col">
+			  <div class="card h-100">
+				<img src="/picture/PutHelmet.png" class="card-img-top service-img" alt="Put Helmet">
+				<div class="card-body">
+				  <h5 class="card-title text-center text-danger">Place Helmet Inside</h5>
+				  <p class="card-text">Once payment is confirmed, the user opens the designated compartment and places the helmet inside.</p>
+				</div>
+			  </div>
+			</div>
+	  
+			<div class="col">
+			  <div class="card h-100">
+				<img src="/picture/RetrieveHelmet.png" class="card-img-top service-img" alt="Retrieve Helmet">
+				<div class="card-body">
+				  <h5 class="card-title text-center text-danger">Sanitation Process Begins</h5>
+				  <p class="card-text">The sanitation process begins automatically.</p>
+				</div>
+			  </div>
+			</div>
+	  
+			<div class="col">
+			  <div class="card h-100">
+				<img src="/picture/image.png" class="card-img-top service-img" alt="Finished">
+				<div class="card-body">
+				  <h5 class="card-title text-center text-danger">Get Fresh Helmet</h5>
+				  <p class="card-text">The user can now get the freshly sanitized, deodorized, and dry helmet from the same compartment. The helmet is now ready for safe and hygienic use.</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+ <!-- End of Service Section -->
+
+
+ <!-- Vision and Mission Section -->
+  	<section class="container-fluid bg-light py-5">
+		<div class="text-center mb-5 text-danger fs-1 mt-4 fw-bold">Vision And Mission</div>
+		<div class="accordion accordion-flush" id="accordionFlushExample">
+			<div class="accordion-item">
+			  <h2 class="accordion-header">
+				<button class="accordion-button collapsed bg-danger text-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+				  Mission
+				</button>
+			  </h2>
+			  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+				<div class="accordion-body">Moto Fresh Vending Machine Service is committed to providing fast, efficient, high-quality sanitation of motorcycle helmets via modern, self-service technologies. Our mission includes ensuring rider safety and personal hygiene through accessible, affordable, and environmentally sound means of cleaning helmets. We intend to fulfill the needs of motorcycle riders, especially students and commuters, by saving time while ensuring the cleanliness, freshness, and safety of their helmets. We intend to ensure a cleaner, healthier, sustainable, and more customer-friendly experience for riders through innovation, customer-focused service, and sustainable practices.</div>
+			  </div>
+			</div>
+			<div class="accordion-item">
+			  <h2 class="accordion-header">
+				<button class="accordion-button collapsed bg-danger text-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+				  Vision
+				</button>
+			  </h2>
+			  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+				<div class="accordion-body">We envision being the best in automated helmet cleaning service, a name synonymous with reliability, innovation, and environmental consciousness. We see the growing of Moto Fresh Vending Machine Service into schools, transport terminals, business hubs, and urban communities throughout the nation-wide. We would like to continuously improve the technology and services while setting a national benchmark for helmet hygiene and promoting responsible waste management and sustainable living. We hope to see a future where cleanliness, convenience, and community well-being coexist.</div>
+			  </div>
 			</div>
 			
-		</div>
+		  </div>
+			  
+			
 	</section>
+  <!-- End of Vision Mission Section -->
 
-	<footer>@2025 Moto Fresh | All Right Reserved.</footer>
-	<script src="main.js"></script>
-	<script src="scrolltoTop.js"></script>
-	<script src="fadeinUp.js"></script>
-	<script src="Accordion.js"></script>
+  <!-- Contact Section -->
+  <section id="contact" class="container-fluid bg-danger py-5">
+	<div class="text-center text-white mb-5">
+	  <h1 class="display-5 fw-bold">Contact Us</h1>
+	</div>
+  
+	<div class="row justify-content-center px-3">
+	  <!-- Map Column -->
+	  <div class="col-12 col-md-6 mb-4">
+		<div class="ratio ratio-4x3">
+		  <iframe
+			src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d546.3096118925278!2d120.86626566399019!3d14.402661516923832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sph!4v1746345735958!5m2!1sen!2sph"
+			style="border:0;" allowfullscreen="" loading="lazy"
+			referrerpolicy="no-referrer-when-downgrade">
+		  </iframe>
+		</div>
+	  </div>
+  
+	  <!-- Contact Info -->
+	  <div class="col-12 col-md-5 text-white">
+		<h2>Get in Touch</h2>
+		<p>We'd love to hear from you. Please reach out with any questions or concerns.</p>
+  
+		<!-- Facebook -->
+		<div class="d-flex align-items-center mb-3">
+		  <i class="fab fa-facebook fa-lg me-2"></i>
+		  <a href="https://www.facebook.com/p/MOTO-FRESH-Vending-Machine-61575145138316/?mibextid=wwXIfr&rdid=DnG1p0zQhvIwhHqU&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1B63rtQLac%2F%3Fmibextid%3DwwXIfr#"
+			 class="text-decoration-none text-white text-break fs-5"
+			 target="_blank" rel="noopener noreferrer">
+			MotoFreshVendoMachine
+		  </a>
+		</div>
+  
+		<!-- Instagram -->
+		<div class="d-flex align-items-center mb-3">
+		  <i class="fab fa-instagram fa-lg me-2"></i>
+		  <a href="https://www.instagram.com/motofreshvendomachine?igsh=aWZsZDNlYmdhMXFo&utm_source=qr"
+			 class="text-decoration-none text-white text-break fs-5"
+			 target="_blank" rel="noopener noreferrer">
+			Moto Fresh Vending Machine
+		  </a>
+		</div>
+  
+		<!-- Phone -->
+		<div class="d-flex align-items-center mb-3">
+		  <i class="fas fa-phone fa-lg me-2"></i>
+		  <span class="fs-5">0967-943-6472</span>
+		</div>
+	  </div>
+	</div>
+  </section>
+  
+  
+	<!-- End of Contact Section -->
+   <!-- Footer Section -->
+   <footer class="container-fluid bg-dark text-white py-1">
+	<div class="container">
+	  <div class="row">
+		<div class="col-12 text-center small">
+		  &copy; 2025 MotoFresh | All Rights Reserved.
+		</div>
+	  </div>
+	</div>
+  </footer>  
+	<!-- End of Footer Section -->
+   
+
+	<!-- BOOTSTRAP JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
+</html>
+
