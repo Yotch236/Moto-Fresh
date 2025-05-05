@@ -109,3 +109,9 @@ html{
         font-size: 30px;
     }
 }
+
+@media (min-width: 320px) and (max-width: 991px){
+    nav.navbar{
+        display: none;
+    }
+}
