@@ -231,8 +231,15 @@
 		</div>
 	  </div>
 	</div>
+
+		<!-- End of Footer Section -->
+
+		<!-- Back to Top Button (visible on md+ devices only) -->
+		<button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">
+			<i class="fas fa-arrow-up"></i>
+		  </button>
+
   </section>
-  
   
 	<!-- End of Contact Section -->
    <!-- Footer Section -->
@@ -245,11 +252,26 @@
 	  </div>
 	</div>
   </footer>  
-	<!-- End of Footer Section -->
-   
-
 	<!-- BOOTSTRAP JS -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+	<script>
+		const backToTopBtn = document.getElementById("backToTopBtn");
+	  
+		window.onscroll = function () {
+		  if (window.innerWidth >= 768) {
+			if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+			  backToTopBtn.classList.add("show");
+			} else {
+			  backToTopBtn.classList.remove("show");
+			}
+		  }
+		};
+	  
+		function scrollToTop() {
+		  window.scrollTo({ top: 0, behavior: 'smooth' });
+		}
+	  </script>
 </body>
 </html>
 
