@@ -10,6 +10,8 @@ Moto Fresh Vending Machine is a self-service device designed to clean, sanitizem
 MEMBERS OF MOTO FRESH VENDING MACHINE PROJECT
 
 -JOANNA EDEP
+
 -NADINE SERRAT  
+
 -JEZELLE
 
