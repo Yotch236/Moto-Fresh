@@ -110,11 +110,12 @@ html{
     }
 }
 
-@media (min-width: 720px){
+@media (max-width: 719px){
     nav.navbar{
         display: none;
     }
 }
+
 
 /* Default: hidden */
 #backToTopBtn {
