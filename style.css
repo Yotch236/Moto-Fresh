@@ -18,14 +18,14 @@
 }
 /* Hover effect for nav links */
 .nav-link:hover {
-  color: maroon !important; /* or any highlight color */
+  color: #800000 !important; /* or any highlight color */
   font-weight: bold;
   text-decoration: underline;
 }
 
 /* For bottom nav links if they don't use .nav-link class */
 .bnav a:hover {
-  color: maroon;
+  color: #800000;
   font-weight: bold;
 }
 
