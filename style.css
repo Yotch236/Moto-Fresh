@@ -18,7 +18,7 @@
 }
 /* Hover effect for nav links */
 .nav-link:hover {
-  color: maroon !important; /* or any highlight color */
+  color: #C0c0c0 !important; /* or any highlight color */
   font-weight: bold;
   text-decoration: underline;
 }
