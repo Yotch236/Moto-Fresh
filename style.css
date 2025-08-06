@@ -25,7 +25,7 @@
 
 /* For bottom nav links if they don't use .nav-link class */
 .bnav a:hover {
-  color: maroon;
+  color: #c0c0c0;
   font-weight: bold;
 }
 
