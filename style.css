@@ -50,10 +50,9 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 #land-title{
     font-weight: bold;
-    color: pink;
+    color: #FFb6c1;
 }
 
 #text-title{
