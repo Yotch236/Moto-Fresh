@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-	<link rel="icon" href="/picture/helmet.ico">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
@@ -14,55 +13,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<title>Moto Fresh Vending Machine</title>
-
-	<style>
-		/* Loader Styles */
-		#loader {
-		  position: fixed;
-		  inset: 0;
-		  background: #dc3545; /* Bootstrap danger red */
-		  display: flex;
-		  flex-direction: column;
-		  justify-content: center;
-		  align-items: center;
-		  z-index: 9999;
-		  transition: opacity 0.5s ease, visibility 0.5s ease;
-		}
-
-		#loader.hidden {
-		  opacity: 0;
-		  visibility: hidden;
-		}
-
-		/* Rotating Helmet Icon */
-		.helmet-icon {
-		  width: 90px;
-		  height: 90px;
-		  animation: spin 2s linear infinite;
-		}
-
-		@keyframes spin {
-		  to {
-			transform: rotate(360deg);
-		  }
-		}
-
-		#loader h2 {
-		  color: white;
-		  margin-top: 15px;
-		  font-family: "Montserrat", sans-serif;
-		  font-weight: 600;
-		  text-align: center;
-		}
-	</style>
 </head>
 <body>
-	<!-- Loader -->
-	<div id="loader">
-		<img src="/picture/helmet.ico" alt="Helmet Icon" class="helmet-icon">
-		<h2>Cleaning Your Helmet Fresh</h2>
-	</div>
-
 	<!-- Top Nav for smaller device -->
 	<nav class="navbar navbar-expand-lg bg-danger">
 		<div class="container-fluid mx-5">
@@ -113,9 +65,7 @@
 				<a href="#about" class="btn btn-success btn-lg">Learn More</a>
 			</div>
 	</section>
-
-	<!-- ... (your existing About, Service, Vision/Mission, Contact, Footer sections remain unchanged) ... -->
-
+	
 	<footer class="container-fluid bg-dark text-white py-1">
 		<div class="container">
 		  <div class="row">
@@ -126,34 +76,6 @@
 		</div>
 	</footer>  
 
-	<!-- BOOTSTRAP JS -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 
-	<script>
-  // Loader Fade Out with Delay
-  window.addEventListener("load", () => {
-    const loader = document.getElementById("loader");
-    setTimeout(() => {
-      loader.classList.add("hidden");
-    }, 1500); // delay in milliseconds (1500 = 1.5s)
-  });
-
-  // Back to Top Button
-  const backToTopBtn = document.getElementById("backToTopBtn");
-
-  window.onscroll = function () {
-    if (window.innerWidth >= 768) {
-      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        backToTopBtn.classList.add("show");
-      } else {
-        backToTopBtn.classList.remove("show");
-      }
-    }
-  };
-
-  function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-</script>
 </body>
 </html>
