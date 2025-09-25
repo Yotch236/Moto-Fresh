@@ -16,15 +16,11 @@
 	<title>Moto Fresh Vending Machine</title>
 
 		<style>
-		html {
-			scroll-behavior: smooth;
-		}
-
 		/* Loader */
 		#loader {
 			position: fixed;
 			inset: 0;
-			background: #dc3545;
+			background: #FFC0CB;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -51,7 +47,7 @@
 		}
 
 		#loader h2 {
-			color: white;
+			color: #008080;
 			margin-top: 15px;
 		}
 
@@ -85,18 +81,18 @@
   </div>
 	
 	<!-- Top Nav for smaller device -->
-	<nav class="navbar navbar-expand-lg bg-danger">
+	<nav class="navbar navbar-expand-lg" id="nav-color">
 		<div class="container-fluid mx-5">
-		  <a class="navbar-brand text-white fw-bold" href="#landing">MFVM</a>
+		  <a class="navbar-brand fw-bold" id="land-title" href="#landing">MFVM</a>
 		  <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		  </button>
 		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 			<div class="navbar-nav ms-auto ">
-			  <a class="nav-link active text-white fw-semibold" aria-current="page" href="#landing">Home</a>
-			  <a class="nav-link text-white fw-semibold" href="#about">About</a>
-			  <a class="nav-link text-white fw-semibold " href="#service">Service</a>
-			  <a class="nav-link text-white fw-semibold" href="#contact">Contact</a>
+			  <a class="nav-link active fw-semibold" id="land-title" aria-current="page" href="#landing">Home</a>
+			  <a class="nav-link fw-semibold" id="land-title" href="#about">About</a>
+			  <a class="nav-link fw-semibold" id="land-title" href="#service">Service</a>
+			  <a class="nav-link fw-semibold" id="land-title" href="#contact">Contact</a>
 			</div>
 		  </div>
 		</div>
@@ -131,7 +127,7 @@
 	 <section id="landing" class="container-fluid">
 		<div class="row vh-100 d-flex justify-content-center align-items-center text-center">
 			<div class="col-lg-6 col-md-8 col-sm-10 fade-in">
-				<h1 class="display-4" id="land-title" >Moto Fresh Vending Machine</h1>
+				<h1 class="display-4 fw-bold text-success" >Moto Fresh Vending Machine</h1>
 				<p class="lead  text-white fw-bold fs-2">Your One-Stop Helmet Cleaning Machine</p>
 				<a href="#about" class="btn btn-success btn-lg">Learn More</a>
 			</div>
@@ -166,9 +162,9 @@
 	  <!-- End of About Section -->
 
 	  <!-- Service Section -->
-	  <section id="service" class="container-fluid bg-danger py-5">
+	  <section id="service" class="container-fluid  py-5">
 		<div class="text-center text-white mb-5">
-		  <h1 class="display-5" id="land-title">How It Works</h1>
+		  <h1 class="display-5 fw-bold" id="land-title">How It Works</h1>
 		</div>
 	  
 		<div class="container">
@@ -250,8 +246,8 @@
   <!-- End of Vision Mission Section -->
 
   <!-- Contact Section -->
-  <section id="contact" class="container-fluid bg-danger py-5">
-	<div class="text-center text-white mb-5">
+  <section id="contact" class="container-fluid py-5">
+	<div class="text-center mb-5" id="land-title">
 	  <h1 class="display-5 fw-bold">Contact Us</h1>
 	</div>
   
@@ -268,7 +264,7 @@
 	  </div>
   
 	  <!-- Contact Info -->
-	  <div class="col-12 col-md-5 text-white">
+	  <div class="col-12 col-md-5" id="land-title">
 		<h2>Get in Touch</h2>
 		<p>We'd love to hear from you. Please reach out with any questions or concerns.</p>
   
@@ -276,7 +272,8 @@
 		<div class="d-flex align-items-center mb-3">
 		  <i class="fab fa-facebook fa-lg me-2"></i>
 		  <a href="https://www.facebook.com/p/MOTO-FRESH-Vending-Machine-61575145138316/?mibextid=wwXIfr&rdid=DnG1p0zQhvIwhHqU&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1B63rtQLac%2F%3Fmibextid%3DwwXIfr#"
-			 class="text-decoration-none text-white text-break fs-5"
+			 class="text-decoration-none text-break fs-5"
+			 id="land-title"
 			 target="_blank" rel="noopener noreferrer">
 			MotoFreshVendoMachine
 		  </a>
@@ -286,7 +283,8 @@
 		<div class="d-flex align-items-center mb-3">
 		  <i class="fab fa-instagram fa-lg me-2"></i>
 		  <a href="https://www.instagram.com/motofreshvendomachine?igsh=aWZsZDNlYmdhMXFo&utm_source=qr"
-			 class="text-decoration-none text-white text-break fs-5"
+			 class="text-decoration-none text-break fs-5"
+			 id="land-title"
 			 target="_blank" rel="noopener noreferrer">
 			Moto Fresh Vending Machine
 		  </a>
