@@ -51,8 +51,11 @@ html{
     background-size: cover;
 }
 #land-title{
-    font-weight: bold;
-    color: #FFb6c1;
+    color: #008080;
+}
+
+#nav-color{
+    background-color: #FFC0CB;
 }
 
 #text-title{
@@ -74,7 +77,14 @@ html{
 	color: #DC3545;
 }
 
-.service-img {
+#service{   
+    background-color: #FFC0CB;
+}
+
+#contact{
+    background-color: #FFC0CB;
+}
+#service-img {
     height: 280px;
     object-fit: cover;
   }
